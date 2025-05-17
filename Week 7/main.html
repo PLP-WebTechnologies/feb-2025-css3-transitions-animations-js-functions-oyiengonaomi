@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Theme Switcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Theme Switcher with Animations</h1>
+            <div class="theme-toggle">
+                <button id="theme-button">
+                    <span class="icon">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="profile-pic"></div>
+                <h2>User Profile</h2>
+                <p>Welcome back! Your settings are automatically saved.</p>
+            </div>
+
+            <div class="animation-demo">
+                <h3>Animation Playground</h3>
+                <div class="animation-controls">
+                    <button id="pulse-btn" class="effect-btn">Pulse</button>
+                    <button id="shake-btn" class="effect-btn">Shake</button>
+                    <button id="spin-btn" class="effect-btn">Spin</button>
+                </div>
+                <div class="animation-target">
+                    <div class="animated-element">🎯</div>
+                </div>
+            </div>
+
+            <div class="preferences">
+                <h3>User Preferences</h3>
+                <div class="preference-item">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="preference-item">
+                    <label for="favorite-color">Favorite Color:</label>
+                    <select id="favorite-color">
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+                <div class="preference-item">
+                    <label for="notifications">Enable Notifications:</label>
+                    <input type="checkbox" id="notifications">
+                </div>
+                <button id="save-preferences">Save Preferences</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Your preferences are saved in localStorage!</p>
+        </footer>
+    </div>
+
+    <script src="scripting.js"></script>
+</body>
+</html>
